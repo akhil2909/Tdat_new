@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="732.0" style="-fx-background-color: #D8D8D8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tdat.controller.DatafolderController">
+   <children>
+      <Pane layoutX="26.0" layoutY="40.0" prefHeight="427.0" prefWidth="685.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXTextField layoutX="95.0" layoutY="103.0" maxWidth="238.0" minWidth="238.0" prefHeight="31.0" prefWidth="238.0" promptText="Folder" />
+            <JFXButton layoutX="429.0" layoutY="103.0" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #58D3F7;" text="Select" />
+            <JFXTextField layoutX="95.0" layoutY="234.0" maxWidth="238.0" minWidth="238.0" prefHeight="31.0" prefWidth="238.0" promptText="Create" />
+            <JFXButton layoutX="429.0" layoutY="228.0" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #58D3F7;" text="Create" />
+            <JFXButton fx:id="btn_nxt_datafolder" buttonType="RAISED" layoutX="298.0" layoutY="317.0" onAction="#actionOnNext" prefHeight="56.0" prefWidth="103.0" style="-fx-background-color: #F79F81;" text="Next">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

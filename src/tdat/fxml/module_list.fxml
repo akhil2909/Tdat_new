@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #FBEFFB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tdat.controller.ModuleListController">
+   <children>
+      <VBox layoutX="-2.0" layoutY="2.0" prefHeight="550.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="63.0" prefWidth="800.0" style="-fx-background-color: #2196f3;" />
+            <Pane prefHeight="484.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="486.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+         <children>
+            <HBox layoutX="-3.0" layoutY="64.0" prefHeight="484.0" prefWidth="780.0">
+               <children>
+                  <JFXListView prefHeight="484.0" prefWidth="228.0" />
+                  <AnchorPane prefHeight="484.0" prefWidth="540.0" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
