@@ -8,13 +8,29 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Tdat.jar" size="8319" download="eager" />
+    <jar href="Tdat.jar" size="430058" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\curvesapi-1.04.jar" size="98365" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
     <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
     <jar href="lib\jfoenix.jar" size="2386350" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="lib\opencsv-3.3.jar" size="31217" download="eager" />
+    <jar href="lib\poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="lib\poi-examples-3.16.jar" size="369786" download="eager" />
+    <jar href="lib\poi-excelant-3.16.jar" size="31218" download="eager" />
+    <jar href="lib\poi-ooxml-3.16.jar" size="1433719" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.16.jar" size="5871746" download="eager" />
+    <jar href="lib\poi-scratchpad-3.16.jar" size="1384931" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Tdat" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="Initializing view, please wait ..."  name="Tdat" />
+  <jfx:javafx-desc  width="800" height="600" main-class="tdat.Tdat"  name="Tdat" />
   <update check="always"/>
 </jnlp>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
@@ -8,32 +9,42 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBEFFB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tdat.controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #FBEFFB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tdat.controller.LoginController">
    <children>
-      <Pane layoutX="56.0" layoutY="50.0" prefHeight="301.0" prefWidth="473.0" style="-fx-background-color: #FFFFFF;">
+      <StackPane prefHeight="550.0" prefWidth="807.0">
          <children>
-            <JFXTextField focusColor="#5aa7da" labelFloat="true" layoutX="118.0" layoutY="77.0" maxWidth="274.0" minWidth="217.0" prefHeight="37.0" prefWidth="255.0" promptText="Username">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </JFXTextField>
-            <JFXPasswordField focusColor="#5aa7da" labelFloat="true" layoutX="122.0" layoutY="143.0" maxWidth="261.0" minWidth="212.0" prefHeight="37.0" prefWidth="247.0" promptText="Password">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </JFXPasswordField>
-            <JFXButton buttonType="RAISED" layoutX="126.0" layoutY="208.0" prefHeight="37.0" prefWidth="79.0" ripplerFill="#d1e9f8" style="-fx-background-color: #A9E2F3;" text="Login" textFill="#400101" wrapText="true">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="301.0" layoutY="201.0" prefHeight="37.0" prefWidth="72.0" ripplerFill="#b8d9e8" style="-fx-background-color: #A9E2F3;" text="Clear">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="121.0" prefWidth="807.0" style="-fx-background-color: #2196f3;;" />
+                  <Pane prefHeight="431.0" prefWidth="807.0" style="-fx-background-color: #EDE7F6;" />
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="486.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+               <children>
+                  <AnchorPane layoutX="166.0" layoutY="90.0" prefHeight="342.0" prefWidth="469.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 8;">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="84.0" layoutX="205.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@User.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField focusColor="#7aa9da" labelFloat="true" layoutX="124.0" layoutY="108.0" maxWidth="238.0" minWidth="201.0" prefHeight="31.0" prefWidth="238.0" promptText="Username">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font></JFXTextField>
+                           <JFXPasswordField focusColor="#6aafe8" labelFloat="true" layoutX="124.0" layoutY="171.0" maxWidth="238.0" minWidth="238.0" prefHeight="31.0" prefWidth="238.0" promptText="Password">
+                               <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                           </JFXPasswordField>
+                        <JFXButton fx:id="loginBtn" layoutX="185.0" layoutY="243.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2196f3;" text="Login" textFill="WHITE">
+                            <font>
+                                 <Font name="Roboto Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                     </children></AnchorPane>
+               </children></AnchorPane>
          </children>
-      </Pane>
+      </StackPane>
    </children>
 </AnchorPane>

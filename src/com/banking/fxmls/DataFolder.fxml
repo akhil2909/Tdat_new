@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="dataFolderAnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banking.controllers.DataFolderController">
+    <stylesheets>
+        <URL value="@/com/banking/css/datafolder.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <StackPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" style="-fx-text-fill: red; -fx-font-size: 20; -fx-font-weight: bold;" text="Title" />
+               </children></StackPane>
+         </top>
+         <center>
+            <StackPane>
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="400.0" text="Choose Data Folder">
+                          <content>
+                            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="87.0" prefWidth="400.0">
+                                 <children>
+                                    <Button fx:id="browseButton" layoutX="321.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleBrowseButton" text="Browse" />
+                                    <TextField fx:id="folderPathField" layoutX="91.0" layoutY="27.0" prefHeight="25.0" prefWidth="200.0" />
+                                    <Label layoutX="14.0" layoutY="31.0" text="Folder Path" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="61.0" prefWidth="400.0" />
+                        <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="400.0" text="Create Run Directory">
+                           <content>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="87.0" prefWidth="400.0">
+                                 <children>
+                                    <Button fx:id="createButton" layoutX="321.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleCreateButton" text="Create" />
+                                    <TextField fx:id="runNameField" layoutX="91.0" layoutY="27.0" prefHeight="25.0" prefWidth="200.0" />
+                                    <Label layoutX="14.0" layoutY="31.0" text="Run Name" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <AnchorPane prefHeight="47.0" prefWidth="800.0" />
+                        <Label fx:id="runDirectory" />
+                        <JFXButton id="NextBtnDataFolder" fx:id="nextButton" buttonType="RAISED" onAction="#handleNextButton" style="-fx-background-color: #29cbd8;" text="Next" textFill="#fbfeff" />
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </center>
+         <bottom>
+            <StackPane maxHeight="-Infinity" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

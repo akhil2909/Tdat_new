@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="modulesListAnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banking.controllers.ModulesListController">
+    <stylesheets>
+        <URL value="@/com/banking/css/moduleslist.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="hBox" alignment="CENTER">
+                     <children>
+                        <StackPane fx:id="vboxSP" prefHeight="600.0" prefWidth="800.0">
+                           <children>
+                              <VBox fx:id="modulesListVBox" alignment="CENTER" maxWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </center>
+         <top>
+            <StackPane maxHeight="-Infinity" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="headerLabel" text="Label" />
+               </children>
+            </StackPane>
+         </top>
+         <bottom>
+            <StackPane maxHeight="-Infinity" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+               </children>
+            </StackPane>
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

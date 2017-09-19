@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+     -fx-background-color: #20B2AA;
+     -fx-background-image: url("CoreBanking.jpg");
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+     -fx-background-size: stretch;
+}

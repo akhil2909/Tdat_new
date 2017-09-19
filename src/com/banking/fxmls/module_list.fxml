@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="JFXAnchorPane" prefHeight="519.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banking.controllers.ModuleListController">
+    <stylesheets>
+        <URL value="@/com/banking/fxmls/module_list.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="hBox" alignment="CENTER" style="-fx-background-color: white;">
+                     <children>
+                        <StackPane fx:id="vboxSP" prefHeight="600.0" prefWidth="300.0">
+                           <children>
+                              <VBox fx:id="modulesListVBox" alignment="CENTER" maxWidth="-Infinity" prefHeight="439.0" prefWidth="471.0" spacing="10.0" style="-fx-background-color: white;">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </center>
+         <top>
+             <StackPane maxHeight="-Infinity" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #F96D64;" BorderPane.alignment="CENTER">
+                <children>
+                  <Label fx:id="headerLabel" text="Application Name" StackPane.alignment="CENTER" />
+                  <JFXButton id="ModuleListBack" fx:id="homeButton" buttonType="RAISED" mnemonicParsing="false" onAction="#handleBackButton" style="-fx-background-color: #29cbd8;" styleClass="ModuleListBack" text="Back" StackPane.alignment="CENTER_LEFT">
+                     <StackPane.margin>
+                        <Insets left="5.0" />
+                     </StackPane.margin></JFXButton>
+               </children>
+             </StackPane>
+         </top>        
+         <bottom>            
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
