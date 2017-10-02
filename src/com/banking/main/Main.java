@@ -19,7 +19,7 @@ public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/Fields_new.fxml"));
 //        Parent root = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/UserInfo.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Banking Tool");

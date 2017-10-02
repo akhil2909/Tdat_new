@@ -4,13 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/workspace/Tdat_new/src/com/banking/main/Main.java</file>
-            <file>file:/E:/workspace/Tdat_new/src/com/banking/actions/ExportToCSV.java</file>
+            <file>file:/E:/workspace/Tdat_new/src/com/banking/fxmls/Fields_new.fxml</file>
             <file>file:/E:/workspace/Tdat_new/src/com/banking/controllers/FieldController.java</file>
-            <file>file:/E:/workspace/Tdat_new/src/com/banking/fxmls/field1.fxml</file>
             <file>file:/E:/workspace/Tdat_new/src/com/banking/fxmls/Fields.fxml</file>
-            <file>file:/E:/workspace/Tdat_new/src/com/banking/controllers/ModuleListController.java</file>
             <file>file:/E:/workspace/Tdat_new/src/com/banking/controllers/FieldsController.java</file>
-            <file>file:/E:/workspace/Tdat_new/src/com/banking/controllers/ModulesListController.java</file>
+            <file>file:/E:/workspace/Tdat_new/src/com/banking/css/fields.css</file>
         </group>
     </open-files>
 </project-private>

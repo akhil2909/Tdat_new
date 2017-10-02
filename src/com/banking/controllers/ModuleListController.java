@@ -226,7 +226,7 @@ public class ModuleListController implements Initializable {
                                     ExcelReader.setSubFunctionSelected(spb.getText());
                                     JFXAnchorPane.getChildren().remove(0);
                                     try {
-                                        Node n = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/field1.fxml"));
+                                        Node n = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/Fields.fxml"));
                                         JFXAnchorPane.getChildren().add(n);
                                     } catch (IOException ex) {
                                     }
@@ -238,7 +238,7 @@ public class ModuleListController implements Initializable {
                         System.out.println("Fields......");
                         JFXAnchorPane.getChildren().remove(0);
                         try {
-                            Node n=FXMLLoader.load(getClass().getResource("/com/banking/fxmls/field1.fxml"));
+                            Node n=FXMLLoader.load(getClass().getResource("/com/banking/fxmls/Fields.fxml"));
                             JFXAnchorPane.getChildren().add(n);
                         } catch (IOException ex) {}
                     }

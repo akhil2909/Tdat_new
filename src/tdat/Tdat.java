@@ -19,7 +19,7 @@ public class Tdat extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("fxml/login.fxml"));        
+        Parent root = FXMLLoader.load(getClass().getResource("/com/banking/fxmls/Fields_new.fxml"));
         Scene scene = new Scene(root);        
         stage.setScene(scene);
         stage.show();
@@ -28,8 +28,8 @@ public class Tdat extends Application {
     /**
      * @param args the command line arguments
 //     */
-//    public static void main(String[] args) {
-//        launch(args);
-//    }
+    public static void main(String[] args) {
+        launch(args);
+    }
 //    
 }
