@@ -115,18 +115,17 @@ public class FieldsController implements Initializable {
         treeActions.setShowRoot(false);
         treeActions.setRoot(rootItem);
         processActionsTree(rootItem);
-        fieldActionsTree(rootItem);
-        excelActionsTree(rootItem);
+        
        // tableView("Add New Customer");
-       if(noForm)
-       {
-           Popup pop = PopupBuilder.create().content(new Label("Update Profile/Profile is not required")).width(50).height(100).autoFix(true).build();
-           Stage s=new Stage();
-           s.setHeight(150);
-           s.setWidth(250);
-           s.show();
-           pop.show(s);
-       }
+//       if(noForm)
+//       {
+//           Popup pop = PopupBuilder.create().content(new Label("Update Profile/Profile is not required")).width(50).height(100).autoFix(true).build();
+//           Stage s=new Stage();
+//           s.setHeight(150);
+//           s.setWidth(250);
+//           s.show();
+//           pop.show(s);
+//       }
         
     }
     public void fieldActionsTree(TreeItem rootItem)

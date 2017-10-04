@@ -48,41 +48,40 @@
                                  <children>
                                     <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
                                        <children>
-                                          <JFXButton contentDisplay="TOP" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #b3e6fc;" text="Add">
+                                          <JFXButton contentDisplay="TOP" onAction="#add" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #b3e6fc;" text="Add">
                                              <graphic>
-                                                <FontAwesomeIcon glyphName="PLUS" text="" />
+                                                <FontAwesomeIcon glyphName="PLUS" />
                                              </graphic></JFXButton>
-                                          <JFXButton contentDisplay="TOP" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #b3e6fc;" text="Edit">
-                                             <HBox.margin>
+                                          <JFXButton contentDisplay="TOP" onAction="#edit" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #b3e6fc;" text="Edit">
+<!--                                             <HBox.margin>
                                                 <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
+                                             </HBox.margin>-->
                                              <graphic>
-                                                <FontAwesomeIcon />
+                                                <FontAwesomeIcon glyphName="PENCIL" />
                                              </graphic>
                                           </JFXButton>
-                                          <JFXButton contentDisplay="TOP" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #b3e6fc;" text="Delete">
+                                          <JFXButton contentDisplay="TOP" onAction="#delete" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #b3e6fc;" text="Delete">
                                              <padding>
                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                              </padding>
                                              <graphic>
-                                                <FontAwesomeIcon />
+                                                <FontAwesomeIcon glyphName="CLOSE" />
                                              </graphic>
                                           </JFXButton>
-                                          <JFXButton contentDisplay="TOP" prefHeight="33.0" prefWidth="69.0" text="Create">
-                                             <HBox.margin>
-                                                <Insets left="50.0" />
-                                             </HBox.margin>
+                                          <JFXButton contentDisplay="TOP" onAction="#create" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: #b3e6fc;" text="Create">
+                                             
                                              <graphic>
-                                                <FontAwesomeIcon />
+                                                <FontAwesomeIcon glyphName="FILE_EXCEL_ALT" />
                                              </graphic>
                                           </JFXButton>
-                                          <JFXButton contentDisplay="TOP" prefHeight="32.0" prefWidth="67.0" text="Open">
+                                          <JFXButton contentDisplay="TOP" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #b3e6fc;" text="Open">
                                              <graphic>
-                                                <FontAwesomeIcon />
-                                             </graphic></JFXButton>
-                                          <JFXButton contentDisplay="TOP" prefHeight="35.0" prefWidth="65.0" text="Save">
+                                                <FontAwesomeIcon glyphName="FOLDER_OPEN" />
+                                             </graphic>
+                                             </JFXButton>
+                                          <JFXButton contentDisplay="TOP" onAction="#export" prefHeight="35.0" prefWidth="65.0" style="-fx-background-color: #b3e6fc;" text="Export">
                                              <graphic>
-                                                <FontAwesomeIcon />
+                                                <FontAwesomeIcon glyphName="SHARE" />
                                              </graphic></JFXButton>
                                        </children>
                                     </HBox>
@@ -98,14 +97,20 @@
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                            </columnResizePolicy>-->
                               </TableView>
-                           </children></AnchorPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></AnchorPane>
                      </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
                   </HBox>
                </children>
             </StackPane>
          </center>
          <top>
-            <StackPane prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <StackPane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #fff555;" BorderPane.alignment="CENTER">
                <children>
                   <Label fx:id="titleLable" text="Label" />
                </children>
